@@ -47,8 +47,6 @@ Partial Class MainMenu
         Me.tsbRefresh = New System.Windows.Forms.ToolStripButton()
         Me.tsbDisplay = New System.Windows.Forms.ToolStripButton()
         Me.tsbDelete = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tlblPath = New System.Windows.Forms.ToolStripStatusLabel()
@@ -184,11 +182,11 @@ Partial Class MainMenu
         Me.ToolStrip.GripMargin = New System.Windows.Forms.Padding(5)
         Me.ToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(48, 48)
-        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbFolderBD, Me.tsbRefresh, Me.tsbDisplay, Me.tsbDelete, Me.ToolStripProgressBar1, Me.ToolStripLabel1})
+        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbFolderBD, Me.tsbRefresh, Me.tsbDisplay, Me.tsbDelete})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip.Name = "ToolStrip"
         Me.ToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip.Size = New System.Drawing.Size(960, 68)
+        Me.ToolStrip.Size = New System.Drawing.Size(960, 55)
         Me.ToolStrip.TabIndex = 6
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -199,7 +197,7 @@ Partial Class MainMenu
         Me.tsbFolderBD.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbFolderBD.Margin = New System.Windows.Forms.Padding(12, 1, 0, 2)
         Me.tsbFolderBD.Name = "tsbFolderBD"
-        Me.tsbFolderBD.Size = New System.Drawing.Size(52, 65)
+        Me.tsbFolderBD.Size = New System.Drawing.Size(52, 52)
         Me.tsbFolderBD.Text = "ToolStripButton1"
         '
         'tsbRefresh
@@ -209,7 +207,7 @@ Partial Class MainMenu
         Me.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbRefresh.Margin = New System.Windows.Forms.Padding(10, 1, 0, 2)
         Me.tsbRefresh.Name = "tsbRefresh"
-        Me.tsbRefresh.Size = New System.Drawing.Size(52, 65)
+        Me.tsbRefresh.Size = New System.Drawing.Size(52, 52)
         Me.tsbRefresh.Text = "ToolStripButton2"
         '
         'tsbDisplay
@@ -219,7 +217,7 @@ Partial Class MainMenu
         Me.tsbDisplay.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbDisplay.Margin = New System.Windows.Forms.Padding(10, 1, 0, 2)
         Me.tsbDisplay.Name = "tsbDisplay"
-        Me.tsbDisplay.Size = New System.Drawing.Size(52, 65)
+        Me.tsbDisplay.Size = New System.Drawing.Size(52, 52)
         Me.tsbDisplay.Text = "ToolStripButton1"
         '
         'tsbDelete
@@ -229,19 +227,8 @@ Partial Class MainMenu
         Me.tsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbDelete.Margin = New System.Windows.Forms.Padding(10, 1, 0, 2)
         Me.tsbDelete.Name = "tsbDelete"
-        Me.tsbDelete.Size = New System.Drawing.Size(52, 65)
+        Me.tsbDelete.Size = New System.Drawing.Size(52, 52)
         Me.tsbDelete.Text = "ToolStripButton3"
-        '
-        'ToolStripProgressBar1
-        '
-        Me.ToolStripProgressBar1.Name = "ToolStripProgressBar1"
-        Me.ToolStripProgressBar1.Size = New System.Drawing.Size(133, 65)
-        '
-        'ToolStripLabel1
-        '
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(125, 65)
-        Me.ToolStripLabel1.Text = "ToolStripLabel1"
         '
         'StatusStrip
         '
@@ -298,17 +285,17 @@ Partial Class MainMenu
         '
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 96)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Location = New System.Drawing.Point(0, 83)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(3, 0, 0, 0)
-        Me.Panel1.Size = New System.Drawing.Size(267, 565)
+        Me.Panel1.Size = New System.Drawing.Size(267, 578)
         Me.Panel1.TabIndex = 9
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(104, 88)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 29)
         Me.Button1.TabIndex = 0
@@ -317,10 +304,10 @@ Partial Class MainMenu
         '
         'Splitter1
         '
-        Me.Splitter1.Location = New System.Drawing.Point(267, 96)
-        Me.Splitter1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Splitter1.Location = New System.Drawing.Point(267, 83)
+        Me.Splitter1.Margin = New System.Windows.Forms.Padding(4)
         Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(3, 565)
+        Me.Splitter1.Size = New System.Drawing.Size(3, 578)
         Me.Splitter1.TabIndex = 10
         Me.Splitter1.TabStop = False
         '
@@ -353,7 +340,7 @@ Partial Class MainMenu
         Me.dgv.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv.EnableHeadersVisualStyles = False
         Me.dgv.GridColor = System.Drawing.SystemColors.Control
-        Me.dgv.Location = New System.Drawing.Point(270, 96)
+        Me.dgv.Location = New System.Drawing.Point(270, 83)
         Me.dgv.Margin = New System.Windows.Forms.Padding(0)
         Me.dgv.Name = "dgv"
         Me.dgv.ReadOnly = True
@@ -361,7 +348,7 @@ Partial Class MainMenu
         Me.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader
         Me.dgv.RowTemplate.Height = 23
         Me.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv.Size = New System.Drawing.Size(690, 565)
+        Me.dgv.Size = New System.Drawing.Size(690, 578)
         Me.dgv.TabIndex = 14
         '
         'folderBD
@@ -375,10 +362,10 @@ Partial Class MainMenu
         Me.lblNoDB.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblNoDB.Font = New System.Drawing.Font("微软雅黑", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.lblNoDB.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblNoDB.Location = New System.Drawing.Point(270, 96)
+        Me.lblNoDB.Location = New System.Drawing.Point(270, 83)
         Me.lblNoDB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNoDB.Name = "lblNoDB"
-        Me.lblNoDB.Size = New System.Drawing.Size(690, 565)
+        Me.lblNoDB.Size = New System.Drawing.Size(690, 578)
         Me.lblNoDB.TabIndex = 16
         Me.lblNoDB.Text = "该路径相关数据库为空，请检查更新数据库"
         Me.lblNoDB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -398,7 +385,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.StatusStrip)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MainMenu"
         Me.Text = "书单管理系统"
         Me.MenuStrip.ResumeLayout(False)
@@ -443,8 +430,6 @@ Partial Class MainMenu
     Friend WithEvents Button1 As Button
     Friend WithEvents tlblPath As ToolStripStatusLabel
     Friend WithEvents tprb As ToolStripProgressBar
-    Friend WithEvents ToolStripProgressBar1 As ToolStripProgressBar
-    Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents lblNoDB As Label
     Friend WithEvents tlblDBName As ToolStripStatusLabel
     Friend WithEvents tlblUTime As ToolStripStatusLabel
