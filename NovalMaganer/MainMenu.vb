@@ -5,7 +5,7 @@ Imports System.IO
 
 
 Public Class MainMenu
-    '路径
+
     Dim SP As String
     Dim NoDB As Boolean
     '数据库是否为空
