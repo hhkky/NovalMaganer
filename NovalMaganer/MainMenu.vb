@@ -196,4 +196,8 @@ Public Class MainMenu
         Me.tsbDelete.Enabled = NoDB
         Me.lblNoDB.Visible = Not NoDB
     End Sub
+
+    Private Sub lblNoDB_Click(sender As Object, e As EventArgs) Handles lblNoDB.Click
+
+    End Sub
 End Class
